@@ -21,7 +21,7 @@ request_params["payload"] = "123"
 request_params["type"] = "1.0"
 
 # Now call the EyeHub API
-event_uri = URI.parse("https://config28.flexeye.com/v1/iot_Default/dms/#{DEVICE_MANAGER_ID}/devices/#{DEVICE_ID}/events")
+event_uri = URI.parse("https://hub.flexeye.com/v1/iot_Default/dms/#{DEVICE_MANAGER_ID}/devices/#{DEVICE_ID}/events")
 http = Net::HTTP.new(event_uri.host, event_uri.port)
 http.use_ssl = true
 request = Net::HTTP::Post.new(event_uri.request_uri)
