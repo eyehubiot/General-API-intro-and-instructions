@@ -14,7 +14,7 @@ DEVICE_ID="YOUR_DEVICE_ID"
 
 print "Creating a new event..."
 
-url = "https://config28.flexeye.com/v1/iot_Default/dms/%s/devices/%s/events" % (DEVICE_MANAGER_ID, DEVICE_ID)
+url = "https://hub.flexeye.com/v1/iot_Default/dms/%s/devices/%s/events" % (DEVICE_MANAGER_ID, DEVICE_ID)
 # These are the event parameters
 data = { 'source': 'test_sensor', 'type': '1.0', 'payload': '123' }
 headers = { 'Content-Type': 'application/json' }
