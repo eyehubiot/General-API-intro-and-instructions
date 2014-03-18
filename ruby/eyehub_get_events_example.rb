@@ -14,7 +14,7 @@ DEVICE_ID="YOUR_DEVICE_ID"
 
 # Now let's get a list of just the events
 puts "Retrieving a list of events..."
-event_uri = URI.parse("https://config28.flexeye.com/v1/iot_Default/dms/#{DEVICE_MANAGER_ID}/devices/#{DEVICE_ID}/events")
+event_uri = URI.parse("https://hub.flexeye.com/v1/iot_Default/dms/#{DEVICE_MANAGER_ID}/devices/#{DEVICE_ID}/events")
 http = Net::HTTP.new(event_uri.host, event_uri.port)
 http.use_ssl = true
 request = Net::HTTP::Get.new(event_uri.request_uri)
