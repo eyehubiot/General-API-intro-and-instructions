@@ -15,7 +15,7 @@ EVENT_ID="YOUR_EVENT_ID"
 
 print "Retrieving event %s..." % (EVENT_ID,)
 
-url = "https://config28.flexeye.com/v1/iot_Default/dms/%s/devices/%s/events/%s" % (DEVICE_MANAGER_ID, DEVICE_ID, EVENT_ID)
+url = "https://hub.flexeye.com/v1/iot_Default/dms/%s/devices/%s/events/%s" % (DEVICE_MANAGER_ID, DEVICE_ID, EVENT_ID)
 
 # Post to the URL after encoding the dictionary as json
 response = requests.get(url, auth=(EYEHUB_USERNAME, EYEHUB_PASSWORD))
