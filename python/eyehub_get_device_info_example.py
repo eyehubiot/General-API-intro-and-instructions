@@ -15,7 +15,7 @@ DEVICE_ID="YOUR_DEVICE_ID"
 # First off, let's get the basic info for the device
 print "Get basic device info for %s" % DEVICE_ID
 
-url = "http://config28.flexeye.com/v1/iot_Default/dms/%s/devices/%s" % (DEVICE_MANAGER_ID, DEVICE_ID)
+url = "http://hub.flexeye.com/v1/iot_Default/dms/%s/devices/%s" % (DEVICE_MANAGER_ID, DEVICE_ID)
 
 # Post to the URL after encoding the dictionary as json
 response = requests.get(url, auth=(EYEHUB_USERNAME, EYEHUB_PASSWORD))
